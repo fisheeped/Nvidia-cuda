@@ -2,7 +2,7 @@
 
 void helloCPU()
 {
-  printf("Hello from the CPU.\n");
+    printf("Hello from the CPU.\n");
 }
 
 /*
@@ -13,24 +13,24 @@ void helloCPU()
 
 void helloGPU()
 {
-  printf("Hello also from the CPU.\n");
+    printf("Hello also from the CPU.\n");
 }
 
 int main()
 {
 
-  helloCPU();
+    helloCPU();
 
-  /*
-   * Refactor this call to `helloGPU` so that it launches
-   * as a kernel on the GPU.
-   */
+    /*
+     * Refactor this call to `helloGPU` so that it launches
+     * as a kernel on the GPU.
+     */
 
-  helloGPU();
+    helloGPU();
 
-  /*
-   * Add code below to synchronize on the completion of the
-   * `helloGPU` kernel completion before continuing the CPU
-   * thread.
-   */
+    /*
+     * Add code below to synchronize on the completion of the
+     * `helloGPU` kernel completion before continuing the CPU
+     * thread.
+     */
 }
